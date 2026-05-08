@@ -22,9 +22,6 @@ model = genai.GenerativeModel(
 st.set_page_config(page_title="AI Medical Image Analyzer", page_icon="a.png", layout="centered")
 
 
-# st.image("a.png", use_container_width=True)
-# st.markdown('<h1 style="text-align: center;"> AI Medical Image Analyzer</h1>', unsafe_allow_html=True)
-
 col1, col2 = st.columns([0.8, 7])
 
 with col1:
@@ -88,7 +85,6 @@ if st.button(" Analyze Image"):
 
             st.success(" Analysis Complete")
             
-            #  FIXED: Reverted to use_column_width for compatibility
             st.image(uploaded_file, use_column_width=True)
             
             st.divider()
