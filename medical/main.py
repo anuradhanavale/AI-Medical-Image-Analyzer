@@ -19,21 +19,29 @@ model = genai.GenerativeModel(
 )
 
 # ---------------- UI ----------------
-st.set_page_config(page_title="AI Medical Image Analyzer", page_icon="a.png", layout="centered")
 
+from pathlib import Path
 
-col1, col2 = st.columns([0.8, 7])
-
-with col1:
-    from pathlib import Path
+st.set_page_config(
+    page_title="AI Medical Image Analyzer",
+    page_icon="a.png",
+    layout="centered"
+)
 
 logo_path = Path(__file__).parent / "a.png"
 
-st.image(str(logo_path), width=80)
+col1, col2 = st.columns([1, 8])
+
+with col1:
+    st.image(str(logo_path), width=80)
 
 with col2:
     st.markdown(
-        "<h1 style='margin-top:-10px;'>AI Medical Image Analyzer</h1>",
+        """
+        <h1 style='margin-top:10px;'>
+            AI Medical Image Analyzer
+        </h1>
+        """,
         unsafe_allow_html=True
     )
 
