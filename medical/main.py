@@ -25,7 +25,11 @@ st.set_page_config(page_title="AI Medical Image Analyzer", page_icon="a.png", la
 col1, col2 = st.columns([0.8, 7])
 
 with col1:
-    st.image("a.png", width=80)
+    from pathlib import Path
+
+logo_path = Path(__file__).parent / "a.png"
+
+st.image(str(logo_path), width=80)
 
 with col2:
     st.markdown(
