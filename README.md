@@ -23,7 +23,7 @@ An AI-powered medical image analysis application built using Streamlit and Googl
 
 # Live Demo
 
-https://your-app-name.streamlit.app
+https://ai-medical-image-analyzer-3cswx3jd3eyzxa6rrmvght.streamlit.app/
 
 ## Disclaimer
 
